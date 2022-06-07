@@ -1,0 +1,17 @@
+{
+  "name": "shop",
+  "version": "1.0.0",
+  "description": "Internet shop for ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "style": "node-sass -w ./scss -o ./css",
+    "sass": "sass --watch scss/app.scss:css/style.css"
+  },
+  "author": "Nikita Rusakov <rusakdeveloepr@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^7.0.1",
+    "sass": "^1.52.2"
+  }
+}

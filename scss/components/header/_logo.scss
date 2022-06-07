@@ -1,0 +1,28 @@
+.component-logo {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px 10px 15px;
+  img {
+    width: 70px;
+  }
+  span {
+    margin-left: 10px;
+    a {
+      font-size: 35px;
+    }
+    P {
+      color: $colorFontSecondary;
+    }
+  }
+  &:hover {
+    img {
+      transform: rotate(360deg);
+      transition: 1s;
+    }
+    span {
+      a {
+        color: $colorLinkMainHover;
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+// colors
+@import './base/colors.scss';
+// vars
+@import './base/vars.scss';
+// normalize
+@import './base/normalize.scss';
+
+// components
+@import './components/header/header', './components/header/logo', './components/modal/modal';
+// pages
+@import './pages/pages.scss';
+.app {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
