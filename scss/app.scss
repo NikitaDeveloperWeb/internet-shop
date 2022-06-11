@@ -7,6 +7,8 @@
 
 // components
 @import './components/header/header', './components/header/logo', './components/modal/modal';
+// forms
+@import './form/button', './form/field', './form/form';
 // pages
 @import './pages/pages.scss';
 .app {

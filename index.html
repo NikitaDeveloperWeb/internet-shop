@@ -22,21 +22,50 @@
         </div>
         <div class="component-header__auth">
           <div class="component-modal">
-            <img src="./images/account.png" alt="">
-            <div class="modal">
-              <div class="modal__overfloy"></div>
+            <img src="./images/account.png" alt="" id="icon-modal-open">
+            <div class="modal" id="modalFormAuth">
+              <div class="modal__overfloy" id="modal-overfloy"></div>
               <div class="modal__window">
-                <div class="modal__window__top"><img src="./images/close.png" alt="Закрыть" srcset=""></div>
+                <div class="modal__window__top"><img src="./images/close.png" alt="Закрыть" srcset=""
+                    id="icon-modal-close"></div>
                 <div class="modal__window__content">
-                  <form action="">
-                    <h2>Вход</h2>
-                    <input type="text" placeholder="Введите почту">
-                    <input type="password" placeholder="Введите пароль">
-                    <button class="button-main">Войти</button>
-                  </form>
-
-                  <div class="switch" onclick="">
-                    <h3></h3>
+                  <div class="forms">
+                    <form action="" class="form-auth" id="form-login">
+                      <h2>Вход</h2>
+                      <label for="authName">Логин или почта:</label>
+                      <input type="email" placeholder="Введите почту или логин" class="field-main" name="authName">
+                      <label for="authPass">Пароль</label>
+                      <input type="password" placeholder="Введите пароль" class="field-main" name="authPass">
+                      <button class="button-main">Войти</button>
+                    </form>
+                    <form action="" class="form-auth" id="form-signUp">
+                      <h2>Регистрация</h2>
+                      <label for="lastname">Фамилия:</label>
+                      <input type="text" placeholder="Введите ваше фамилию" class="field-main" name="lastname">
+                      <label for="firstname">Имя:</label>
+                      <input type="text" placeholder="Введите ваше имя" class="field-main" name="firstname">
+                      <label for="patronymic">Отчество:</label>
+                      <input type="text" placeholder="Введите ваше отчество" class="field-main" name="patronymic">
+                      <label for="login">Логин:</label>
+                      <input type="text" placeholder="Введите ваш логин" class="field-main" name="login">
+                      <label for="email">Почта:</label>
+                      <input type="email" placeholder="Введите вашу почту" class="field-main" name="email">
+                      <label for="password">Пароль:</label>
+                      <input type="password" placeholder="Введите пароль" class="field-main" name="password">
+                      <label for="password_repeat">Повторите пароль:</label>
+                      <input type="password" placeholder="Повторите пароль" class="field-main" name="password_repeat">
+                      <span>
+                        <input type="checkbox" id="politics" onclick="check();" value="" autocomplete="off"
+                          class="politicChechbox" />
+                        <p> Нажимая на кнопку "Отправить", я даю согласие на
+                          обработку персональных данных.</p>
+                      </span>
+                      <button class="button-main button-disabled" id="signUpbut" disabled="">Отправить</button>
+                    </form>
+                    <div class="switch" onclick="">
+                      <button type="button" id="switch-login">Вход</button>
+                      <button type="button" id="switch-signUp">Регистрация</button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -50,5 +79,7 @@
     </div>
   </div>
 </body>
+<script src="./scripts/formsAuth.js"></script>
+<script src="./scripts/modal.js"></script>
 
 </html>

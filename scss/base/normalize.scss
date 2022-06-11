@@ -28,3 +28,7 @@ a:hover {
   color: $colorLinkMainHover;
   transition: 0.5s;
 }
+button,
+a {
+  cursor: pointer;
+}

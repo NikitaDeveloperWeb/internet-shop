@@ -1,0 +1,20 @@
+.button-main {
+  width: 40%;
+  background: $colorButtonMain;
+  border: none;
+  padding: 10px;
+  border-radius: 7px;
+  font-size: 20px;
+  color: $colorBG;
+  transition: 0.6s;
+}
+.button-disabled {
+  width: 40%;
+  background: $colorButtonDisabled;
+  border: none;
+  padding: 10px;
+  border-radius: 7px;
+  font-size: 20px;
+  color: $colorBG;
+  transition: 0.6s;
+}
