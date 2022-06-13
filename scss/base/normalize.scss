@@ -32,3 +32,23 @@ button,
 a {
   cursor: pointer;
 }
+footer {
+  padding: 10px;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  p {
+    font-size: 25px;
+    margin-left: 20px;
+    color: $colorFontSecondary;
+    // align-self: flex-end;
+  }
+  .component-logo {
+    span {
+      p {
+        margin-left: 0;
+      }
+    }
+  }
+}

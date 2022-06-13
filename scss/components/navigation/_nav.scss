@@ -1,0 +1,10 @@
+.component-nav {
+  width: 100%;
+  display: flex;
+  padding: 10px;
+  background: $colorNavBg;
+  a {
+    font-size: 20px;
+    margin-left: 10px;
+  }
+}
