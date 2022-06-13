@@ -1,0 +1,16 @@
+.component-categories {
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  a {
+    padding: 7px 13px 7px 13px;
+    background: $colorHeader;
+    margin-left: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+  }
+  &__active {
+    color: $colorLinkMainHover !important;
+  }
+}

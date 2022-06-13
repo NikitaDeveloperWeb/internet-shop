@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <title>SHOPNAME | главная страница</title>
+</head>
+
+<body>
+  <div class="app">
+    <div class="pages">
+      <header class="component-header">
+        <div class="component-logo">
+          <img src="./images/logo.png" alt="Логотип">
+          <span>
+            <a href="index.html">INTERNET SHOP</a>
+            <p>магазин лучших товаров</p>
+          </span>
+        </div>
+        <div class="component-header__auth">
+          <div class="component-modal">
+            <img src="./images/account.png" alt="" id="icon-modal-open">
+            <div class="modal" id="modalFormAuth">
+              <div class="modal__overfloy" id="modal-overfloy"></div>
+              <div class="modal__window">
+                <div class="modal__window__top"><img src="./images/close.png" alt="Закрыть" srcset=""
+                    id="icon-modal-close"></div>
+                <div class="modal__window__content">
+                  <div class="forms">
+                    <form action="" class="form-auth" id="form-login">
+                      <h2>Вход</h2>
+                      <label for="authName">Логин или почта:</label>
+                      <input type="email" placeholder="Введите почту или логин" class="field-main" name="authName">
+                      <label for="authPass">Пароль</label>
+                      <input type="password" placeholder="Введите пароль" class="field-main" name="authPass">
+                      <button class="button-main">Войти</button>
+                    </form>
+                    <form action="" class="form-auth" id="form-signUp">
+                      <h2>Регистрация</h2>
+                      <label for="lastname">Фамилия:</label>
+                      <input type="text" placeholder="Введите ваше фамилию" class="field-main" name="lastname">
+                      <label for="firstname">Имя:</label>
+                      <input type="text" placeholder="Введите ваше имя" class="field-main" name="firstname">
+                      <label for="patronymic">Отчество:</label>
+                      <input type="text" placeholder="Введите ваше отчество" class="field-main" name="patronymic">
+                      <label for="login">Логин:</label>
+                      <input type="text" placeholder="Введите ваш логин" class="field-main" name="login">
+                      <label for="email">Почта:</label>
+                      <input type="email" placeholder="Введите вашу почту" class="field-main" name="email">
+                      <label for="password">Пароль:</label>
+                      <input type="password" placeholder="Введите пароль" class="field-main" name="password">
+                      <label for="password_repeat">Повторите пароль:</label>
+                      <input type="password" placeholder="Повторите пароль" class="field-main" name="password_repeat">
+                      <span>
+                        <input type="checkbox" id="politics" onclick="check();" value="" autocomplete="off"
+                          class="politicChechbox" />
+                        <p> Нажимая на кнопку "Отправить", я даю согласие на
+                          обработку персональных данных.</p>
+                      </span>
+                      <button class="button-main button-disabled" id="signUpbut" disabled="">Отправить</button>
+                    </form>
+                    <div class="switch" onclick="">
+                      <button type="button" id="switch-login">Вход</button>
+                      <button type="button" id="switch-signUp">Регистрация</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="basket.html">
+            <img src="./images/basketAlt.png" alt="">
+          </a>
+        </div>
+      </header>
+      <nav class="component-nav">
+        <a href="index.html">О нас</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="contacts.html">Где нас найти?</a>
+      </nav>
+      <div class="pages-products">
+        <aside>
+          <h2 class="title">Фильтры</h2>
+          <form action="" class="form-filter">
+            <div class="input-set">
+              <h2>Цена:</h2>
+              <span>
+                <span>
+                  <p>От:</p>
+                  <input type="text">
+                </span>
+
+                <span>
+                  <p>До:</p>
+                  <input type="text">
+                </span>
+              </span>
+
+            </div>
+            <section>
+              <h2>Год:</h2>
+              <select name="year" id="">
+                <option value="2010">2010</option>
+                <option value="2011">2011</option>
+                <option value="2012">2012</option>
+                <option value="2013">2013</option>
+                <option value="2014">2014</option>
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+              </select>
+            </section>
+            <button type="submit" class="button-main">Применить</button>
+          </form>
+        </aside>
+        <main>
+          <div class="component-categories">
+            <a href="" class="component-categories__active">Все</a>
+            <a href="">Мужчинам</a>
+            <a href="">Женщинам</a>
+          </div>
+          <ul class="list">
+            <li class="component-cart">
+              <a href="">
+                <img src="https://main-cdn.sbermegamarket.ru/big2/hlr-system/-11/083/238/624/221/730/100031531332b0.jpg"
+                  alt="Изображение товара">
+                <p>Название товара</p>
+              </a>
+              <span>
+                <p><strong>Цена:</strong> 5000 р.</p>
+                <img src="./images/plus.png" alt="Добавить в корзину" srcset="">
+              </span>
+
+            </li>
+            <li class="component-cart">
+              <a href="">
+                <img src="https://main-cdn.sbermegamarket.ru/big2/hlr-system/-11/083/238/624/221/730/100031531332b0.jpg"
+                  alt="Изображение товара">
+                <p>Название товара</p>
+              </a>
+              <span>
+                <p><strong>Цена:</strong> 5000 р.</p>
+                <img src="./images/plus.png" alt="Добавить в корзину" srcset="">
+              </span>
+
+            </li>
+            <li class="component-cart">
+              <a href="">
+                <img src="https://main-cdn.sbermegamarket.ru/big2/hlr-system/-11/083/238/624/221/730/100031531332b0.jpg"
+                  alt="Изображение товара">
+                <p>Название товара</p>
+              </a>
+              <span>
+                <p><strong>Цена:</strong> 5000 р.</p>
+                <img src="./images/plus.png" alt="Добавить в корзину" srcset="">
+              </span>
+
+            </li>
+            <li class="component-cart">
+              <a href="">
+                <img src="https://main-cdn.sbermegamarket.ru/big2/hlr-system/-11/083/238/624/221/730/100031531332b0.jpg"
+                  alt="Изображение товара">
+                <p>Название товара</p>
+              </a>
+              <span>
+                <p><strong>Цена:</strong> 5000 р.</p>
+                <img src="./images/plus.png" alt="Добавить в корзину" srcset="">
+              </span>
+
+            </li>
+            <li class="component-cart">
+              <a href="">
+                <img src="https://main-cdn.sbermegamarket.ru/big2/hlr-system/-11/083/238/624/221/730/100031531332b0.jpg"
+                  alt="Изображение товара">
+                <p>Название товара</p>
+              </a>
+              <span>
+                <p><strong>Цена:</strong> 5000 р.</p>
+                <img src="./images/plus.png" alt="Добавить в корзину" srcset="">
+              </span>
+
+            </li>
+            <li class="component-cart">
+              <a href="">
+                <img src="https://main-cdn.sbermegamarket.ru/big2/hlr-system/-11/083/238/624/221/730/100031531332b0.jpg"
+                  alt="Изображение товара">
+                <p>Название товара</p>
+              </a>
+              <span>
+                <p><strong>Цена:</strong> 5000 р.</p>
+                <img src="./images/plus.png" alt="Добавить в корзину" srcset="">
+              </span>
+
+            </li>
+          </ul>
+        </main>
+      </div>
+
+    </div>
+  </div>
+</body>
+<script src="./scripts/formsAuth.js"></script>
+<script src="./scripts/modal.js"></script>
+
+</html>

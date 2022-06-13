@@ -56,7 +56,32 @@ footer .component-logo span p {
   margin-left: 0;
 }
 
+aside {
+  position: relative;
+  width: 300px;
+  background: rgb(255, 255, 255);
+  height: 50vh;
+  padding: 10px;
+  border-radius: 10px;
+}
+aside .title {
+  border-bottom: 2px solid rgb(155, 155, 155);
+  padding-bottom: 5px;
+}
+aside .filter-form {
+  margin-top: 10px;
+}
+
+section {
+  margin-top: 10px;
+}
+
+main {
+  width: 100%;
+}
+
 .component-header {
+  position: relative;
   width: 100%;
   background: rgb(255, 255, 255);
   display: flex;
@@ -166,6 +191,11 @@ footer .component-logo span p {
   width: 100%;
   background: rgb(255, 255, 255);
   padding: 30px 20px 30px 20px;
+}
+.component-slider h2 {
+  width: 40%;
+  border-bottom: 2px solid rgb(75, 75, 75);
+  padding-bottom: 10px;
 }
 
 #slider_bl .wrapper {
@@ -424,6 +454,81 @@ footer .component-logo span p {
     padding: 0 80px;
   }
 }
+.component-categories {
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+.component-categories a {
+  padding: 7px 13px 7px 13px;
+  background: rgb(255, 255, 255);
+  margin-left: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+.component-categories__active {
+  color: rgb(119, 189, 255) !important;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  background: rgb(241, 241, 241);
+  border-radius: 5px;
+  border: none;
+  margin-top: 5px;
+}
+
+.component-cart {
+  width: 300px;
+  height: 400px;
+  background: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-top: 30px;
+  list-style: none;
+}
+.component-cart:hover {
+  background: rgb(247, 247, 247);
+}
+.component-cart img {
+  width: 100%;
+  border-radius: 20px;
+}
+.component-cart a {
+  width: 100%;
+}
+.component-cart a p {
+  font-size: 25px;
+}
+.component-cart span {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.component-cart span img {
+  width: 70px;
+  cursor: pointer;
+}
+.component-cart span img:hover {
+  background: rgb(255, 255, 255);
+}
+.component-cart span p {
+  font-size: 20px;
+}
+
+.list {
+  width: 100%;
+  padding: 7px 13px 7px 13px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .button-main {
   width: 40%;
   background: rgb(136, 184, 247);
@@ -451,6 +556,32 @@ footer .component-logo span p {
   border: none;
   padding: 10px;
   border-bottom: 1px solid rgb(155, 155, 155);
+}
+
+.input-set {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+.input-set h2 {
+  margin-top: 10px !important;
+}
+.input-set span {
+  display: flex;
+  margin-top: 5px;
+}
+.input-set span span {
+  display: flex;
+  flex-direction: column;
+}
+.input-set span span input {
+  width: 90%;
+  border: none;
+  background: rgb(241, 241, 241);
+  padding: 5px;
+  font-size: 15px;
+  margin-top: 5px;
+  border-radius: 5px;
 }
 
 .form-auth {
@@ -508,10 +639,28 @@ footer .component-logo span p {
   background: rgb(143, 163, 253);
 }
 
+.form-filter {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90%;
+}
+.form-filter button {
+  width: 100% !important;
+  margin-bottom: 10px;
+}
+
 .pages {
   width: 100%;
   display: flex;
   flex-direction: column;
+}
+
+.pages-products {
+  width: 100%;
+  display: flex;
+  padding: 10px 20px 10px 20px;
 }
 
 .app {

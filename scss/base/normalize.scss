@@ -52,3 +52,26 @@ footer {
     }
   }
 }
+
+aside {
+  position: relative;
+  width: 300px;
+  background: $colorHeader;
+  height: 50vh;
+  padding: 10px;
+  border-radius: 10px;
+  .title {
+    border-bottom: 2px solid $colorBorderField;
+    padding-bottom: 5px;
+  }
+  .filter-form {
+    margin-top: 10px;
+  }
+}
+section {
+  margin-top: 10px;
+}
+
+main {
+  width: 100%;
+}

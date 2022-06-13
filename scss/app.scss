@@ -7,7 +7,8 @@
 
 // components
 @import './components/header/header', './components/header/logo', './components/modal/modal',
-  './components/navigation/nav', './components/slider/slider';
+  './components/navigation/nav', './components/slider/slider', './components/categories/categories',
+  './form/select', './components/cart/cart', './components/cart/list';
 // forms
 @import './form/button', './form/field', './form/form';
 // pages

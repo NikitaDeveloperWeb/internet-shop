@@ -55,3 +55,16 @@
     }
   }
 }
+
+.form-filter {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90%;
+  button {
+    width: 100% !important;
+    margin-bottom: 10px;
+    // align-self: flex-end;
+  }
+}

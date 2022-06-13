@@ -4,3 +4,28 @@
   padding: 10px;
   border-bottom: 1px solid $colorBorderField;
 }
+.input-set {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  h2 {
+    margin-top: 10px !important;
+  }
+  span {
+    display: flex;
+    margin-top: 5px;
+    span {
+      display: flex;
+      flex-direction: column;
+      input {
+        width: 90%;
+        border: none;
+        background: $colorBG;
+        padding: 5px;
+        font-size: 15px;
+        margin-top: 5px;
+        border-radius: 5px;
+      }
+    }
+  }
+}
