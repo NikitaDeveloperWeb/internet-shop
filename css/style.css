@@ -192,6 +192,7 @@ main {
   background: rgb(255, 255, 255);
   padding: 30px 20px 30px 20px;
 }
+
 .component-slider h2 {
   width: 40%;
   border-bottom: 2px solid rgb(75, 75, 75);
@@ -529,6 +530,143 @@ select {
   justify-content: center;
 }
 
+.product {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.product__image {
+  width: 60%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.product__image img {
+  width: 80%;
+}
+.product__info {
+  width: 40%;
+  padding: 20px;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.product__info h2 {
+  font-size: 45px;
+}
+.product__info p {
+  font-size: 30px;
+  margin-top: 20px;
+}
+.product__info form {
+  width: 100%;
+  display: flex;
+}
+.product__info form button {
+  margin-top: 50px;
+}
+
+.basket {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.basket ul {
+  width: 70%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  border-right: 1px solid rgb(155, 155, 155);
+}
+.basket ul li {
+  list-style: none;
+  display: flex;
+  background: rgb(255, 255, 255);
+  padding: 10px;
+  width: 100%;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(155, 155, 155);
+  margin-top: 20px;
+  align-items: center;
+}
+.basket ul li p {
+  font-size: 30px;
+  margin-left: 20px;
+}
+.basket ul li a {
+  font-size: 30px;
+}
+.basket ul li img {
+  width: 50px;
+}
+.basket__form {
+  padding: 20px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.basket__form p {
+  font-size: 20px;
+}
+.basket__form button {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.admin {
+  width: 100%;
+  display: flex;
+}
+.admin aside {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.admin aside button {
+  width: 100%;
+  margin-top: 20px;
+}
+.admin main {
+  padding: 10px;
+}
+
+.dataset {
+  width: 100%;
+  padding: 10px 10px 10px 30px;
+}
+.dataset ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.dataset ul li {
+  background: rgb(255, 255, 255);
+  justify-content: space-between;
+  width: 100%;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  margin-top: 20px;
+}
+.dataset ul li span p {
+  display: flex;
+  flex-direction: row;
+}
+.dataset ul li p {
+  display: flex;
+  flex-direction: column;
+}
+.dataset ul li p img {
+  width: 50px;
+}
+
 .button-main {
   width: 40%;
   background: rgb(136, 184, 247);
@@ -538,6 +676,9 @@ select {
   font-size: 20px;
   color: rgb(241, 241, 241);
   transition: 0.6s;
+}
+.button-main:hover {
+  background: rgb(101, 164, 247);
 }
 
 .button-disabled {

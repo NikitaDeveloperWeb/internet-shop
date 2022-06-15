@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <title>SHOPNAME | административная панель</title>
+</head>
+
+<body>
+  <div class="app">
+    <div class="pages">
+      <header class="component-header">
+        <div class="component-logo">
+          <img src="./images/logo.png" alt="Логотип">
+          <span>
+            <a href="index.html">INTERNET SHOP</a>
+            <p>магазин лучших товаров</p>
+          </span>
+        </div>
+        <div class="component-header__auth">
+          <div class="component-modal">
+            <img src="./images/account.png" alt="" id="icon-modal-open">
+            <div class="modal" id="modalFormAuth">
+              <div class="modal__overfloy" id="modal-overfloy"></div>
+              <div class="modal__window">
+                <div class="modal__window__top"><img src="./images/close.png" alt="Закрыть" srcset=""
+                    id="icon-modal-close"></div>
+                <div class="modal__window__content">
+                  <div class="forms">
+                    <form action="" class="form-auth" id="form-login">
+                      <h2>Вход</h2>
+                      <label for="authName">Логин или почта:</label>
+                      <input type="email" placeholder="Введите почту или логин" class="field-main" name="authName">
+                      <label for="authPass">Пароль</label>
+                      <input type="password" placeholder="Введите пароль" class="field-main" name="authPass">
+                      <button class="button-main">Войти</button>
+                    </form>
+                    <form action="" class="form-auth" id="form-signUp">
+                      <h2>Регистрация</h2>
+                      <label for="lastname">Фамилия:</label>
+                      <input type="text" placeholder="Введите ваше фамилию" class="field-main" name="lastname">
+                      <label for="firstname">Имя:</label>
+                      <input type="text" placeholder="Введите ваше имя" class="field-main" name="firstname">
+                      <label for="patronymic">Отчество:</label>
+                      <input type="text" placeholder="Введите ваше отчество" class="field-main" name="patronymic">
+                      <label for="login">Логин:</label>
+                      <input type="text" placeholder="Введите ваш логин" class="field-main" name="login">
+                      <label for="email">Почта:</label>
+                      <input type="email" placeholder="Введите вашу почту" class="field-main" name="email">
+                      <label for="password">Пароль:</label>
+                      <input type="password" placeholder="Введите пароль" class="field-main" name="password">
+                      <label for="password_repeat">Повторите пароль:</label>
+                      <input type="password" placeholder="Повторите пароль" class="field-main" name="password_repeat">
+                      <span>
+                        <input type="checkbox" id="politics" onclick="check();" value="" autocomplete="off"
+                          class="politicChechbox" />
+                        <p> Нажимая на кнопку "Отправить", я даю согласие на
+                          обработку персональных данных.</p>
+                      </span>
+                      <button class="button-main button-disabled" id="signUpbut" disabled="">Отправить</button>
+                    </form>
+                    <div class="switch" onclick="">
+                      <button type="button" id="switch-login">Вход</button>
+                      <button type="button" id="switch-signUp">Регистрация</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="basket.html">
+            <img src="./images/basketAlt.png" alt="">
+          </a>
+        </div>
+      </header>
+      <nav class="component-nav">
+        <a href="index.html">О нас</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="contacts.html">Где нас найти?</a>
+      </nav>
+      <div class="pages-products">
+
+        <div class="admin">
+
+          <aside>
+
+            <button type="button" class="button-main" id="userBut">Пользователи</button>
+            <button type="button" class="button-main" id="prodBut">Товары</button>
+            <button type="button" class="button-main" id="orderBut">Заказы</button>
+          </aside>
+          <main>
+            <!-- Пользователи -->
+            <h1>Административная панель</h1>
+            <div class="dataset" id="user">
+              <h2>Пользователи</h2>
+              <ul>
+                <li>
+                  <span>
+                    <p><strong>ID:</strong> 1</p>
+                    <p><strong>Фамилия:</strong> Русаков</p>
+                    <p><strong>Имя:</strong> Никита</p>
+                    <p><strong>Отчество:</strong> Вячеславович</p>
+                    <p><strong>Логин:</strong> rusak</p>
+                    <p><strong>Почта:</strong> rusakdeveloper@gmail.com</p>
+                  </span>
+                  <p><strong>Действия:</strong>
+                    <span>
+                      <a href=""> <img src="./images/edit.png" alt=""></a>
+                      <a href=""><img src="./images/trush.png" alt=""></a>
+                    </span>
+                  </p>
+                </li>
+                <li>
+                  <span>
+                    <p><strong>ID:</strong> 1</p>
+                    <p><strong>Фамилия:</strong> Русаков</p>
+                    <p><strong>Имя:</strong> Никита</p>
+                    <p><strong>Отчество:</strong> Вячеславович</p>
+                    <p><strong>Логин:</strong> rusak</p>
+                    <p><strong>Почта:</strong> rusakdeveloper@gmail.com</p>
+                  </span>
+                  <p><strong>Действия:</strong>
+                    <span>
+                      <a href=""> <img src="./images/edit.png" alt=""></a>
+                      <a href=""><img src="./images/trush.png" alt=""></a>
+                    </span>
+                  </p>
+                </li>
+                <li>
+                  <span>
+                    <p><strong>ID:</strong> 1</p>
+                    <p><strong>Фамилия:</strong> Русаков</p>
+                    <p><strong>Имя:</strong> Никита</p>
+                    <p><strong>Отчество:</strong> Вячеславович</p>
+                    <p><strong>Логин:</strong> rusak</p>
+                    <p><strong>Почта:</strong> rusakdeveloper@gmail.com</p>
+                  </span>
+                  <p><strong>Действия:</strong>
+                    <span>
+                      <a href=""> <img src="./images/edit.png" alt=""></a>
+                      <a href=""><img src="./images/trush.png" alt=""></a>
+                    </span>
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <!-- товары -->
+            <div class="dataset" id="product">
+              <h2>Товары</h2>
+              <ul>
+                <li>
+                  <span>
+                    <p><strong>ID:</strong> 1</p>
+                    <p><strong>Название:</strong> Название товара</p>
+                    <p><strong>Кол-во:</strong> 10</p>
+                    <p><strong>Цена:</strong> 5000 р.</p>
+
+                  </span>
+                  <p><strong>Действия:</strong>
+                    <span>
+                      <a href=""> <img src="./images/edit.png" alt=""></a>
+                      <a href=""><img src="./images/trush.png" alt=""></a>
+                    </span>
+                  </p>
+                </li>
+                <li>
+                  <span>
+                    <p><strong>ID:</strong> 1</p>
+                    <p><strong>Название:</strong> Название товара</p>
+                    <p><strong>Кол-во:</strong> 10</p>
+                    <p><strong>Цена:</strong> 5000 р.</p>
+
+                  </span>
+                  <p><strong>Действия:</strong>
+                    <span>
+                      <a href=""> <img src="./images/edit.png" alt=""></a>
+                      <a href=""><img src="./images/trush.png" alt=""></a>
+                    </span>
+                  </p>
+                </li>
+                <li>
+                  <span>
+                    <p><strong>ID:</strong> 1</p>
+                    <p><strong>Название:</strong> Название товара</p>
+                    <p><strong>Кол-во:</strong> 10</p>
+                    <p><strong>Цена:</strong> 5000 р.</p>
+                  </span>
+                  <p><strong>Действия:</strong>
+                    <span>
+                      <a href=""> <img src="./images/edit.png" alt=""></a>
+                      <a href=""><img src="./images/trush.png" alt=""></a>
+                    </span>
+                  </p>
+                </li>
+
+              </ul>
+            </div>
+            <!-- заказы -->
+            <div class="dataset" id="order">
+              <h2>Заказы</h2>
+              <ul>
+                <li>
+                  <span>
+                    <p><strong>ID:</strong> 1</p>
+                    <p><strong>Имя заказчика:</strong> Русаков Никита</p>
+                    <p><strong>Товары:</strong> Название товара Х 4</p>
+                    <p><strong>Сумма:</strong> 15 000 р.</p>
+
+                  </span>
+                  <p><strong>Действия:</strong>
+                    <span>
+                      <a href=""> <img src="./images/edit.png" alt=""></a>
+                      <a href=""><img src="./images/trush.png" alt=""></a>
+                    </span>
+                  </p>
+                </li>
+                <li>
+                  <span>
+                    <p><strong>ID:</strong> 1</p>
+                    <p><strong>Имя заказчика:</strong> Русаков Никита</p>
+                    <p><strong>Товары:</strong> Название товара Х 4</p>
+                    <p><strong>Сумма:</strong> 15 000 р.</p>
+
+
+                  </span>
+                  <p><strong>Действия:</strong>
+                    <span>
+                      <a href=""> <img src="./images/edit.png" alt=""></a>
+                      <a href=""><img src="./images/trush.png" alt=""></a>
+                    </span>
+                  </p>
+                </li>
+                <li>
+                  <span>
+                    <p><strong>ID:</strong> 1</p>
+                    <p><strong>Имя заказчика:</strong> Русаков Никита</p>
+                    <p><strong>Товары:</strong> Название товара Х 4</p>
+                    <p><strong>Сумма:</strong> 15 000 р.</p>
+
+                  </span>
+                  <p><strong>Действия:</strong>
+                    <span>
+                      <a href=""> <img src="./images/edit.png" alt=""></a>
+                      <a href=""><img src="./images/trush.png" alt=""></a>
+                    </span>
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </main>
+        </div>
+      </div>
+</body>
+<script src="./scripts/formsAuth.js"></script>
+<script src="./scripts/modal.js"></script>
+<script src="./scripts/admin.js"></script>
+
+</html>

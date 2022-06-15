@@ -2,11 +2,11 @@
   width: 100%;
   background: $colorHeader;
   padding: 30px 20px 30px 20px;
-  h2 {
-    width: 40%;
-    border-bottom: 2px solid $colorBorderTitle;
-    padding-bottom: 10px;
-  }
+}
+.component-slider h2 {
+  width: 40%;
+  border-bottom: 2px solid $colorBorderTitle;
+  padding-bottom: 10px;
 }
 #slider_bl .wrapper {
   max-width: 60em;
